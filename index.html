@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PituxxDEV | Portafolio Profesional</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>PituxxDEV</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#web-projects">Web</a></li>
+        <li><a href="#game-projects">Videojuegos</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#contact">Contacto</a></li>
+        <li><a href="Cv.pdf" download class="cv-btn">Descargar CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Hola, soy <span>PituxxDEV</span></h2>
+    <p>Desarrollador web y programador de videojuegos. Transformo ideas en experiencias digitales.</p>
+  </section>
+
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>Soy <strong>Cristóbal Andrade</strong>, conocido como <strong>PituxxDEV</strong>. Ingeniero en Realidad Virtual y Diseño de Juegos Digitales, Especialista en desarrollo web y programación de videojuegos. Me apasiona crear proyectos interactivos, eficientes y visualmente atractivos.</p>
+  </section>
+
+  <section id="web-projects">
+    <h2>Proyectos Web</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Pagina web para Distribuidor de Claro Chile</h3>
+        <a href="http://690278ae3be1eb62b7d3f083--stately-tanuki-4cc543.netlify.app/" target="_blank">
+        <img src="images/160x160.png" alt="Landing Agencia">
+        </a>
+      </div>
+      <div class="project-card">
+        <img src="img/web1.jpg" alt="Proyecto Web 2">
+        <h3>Landing para Promocion de Casinos Online</h3>
+      </div>
+
+  </section>
+
+  <section id="game-projects">
+    <h2>Proyectos de Videojuegos</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="img/game1.jpg" alt="Videojuego 1">
+        <h3>TEAYUDO</h3>
+      </div>
+      <div class="project-card">
+        <img src="img/game2.jpg" alt="Videojuego 2">
+        <h3>Plataformas 2D</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Habilidades</h2>
+    <ul class="skills-list">
+      <li>HTML / CSS / JavaScript</li>
+      <li>Blender / Visual Studio Code</li>
+      <li>Unity / C#</li>
+      <li>Diseño UI/UX</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <p>¿Quieres trabajar conmigo o conocer más sobre mis proyectos?</p>
+    <a href="mailto:contacto@pituxxdev.com" class="cta">Escríbeme</a>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> PituxxDEV. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
