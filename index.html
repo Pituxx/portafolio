@@ -18,12 +18,13 @@
         <li><a href="#contact">Contacto</a></li>
         <li><a href="Cv.pdf" download class="cv-btn">Descargar CV</a></li>
       </ul>
+      
     </nav>
   </header>
 
   <section id="hero">
     <h2>Hola, soy <span>PituxxDEV</span></h2>
-    <p>Desarrollador web y programador de videojuegos. Transformo ideas en experiencias digitales.</p>
+    <h1 id="typing"></h1>
   </section>
 
   <section id="about">
@@ -31,7 +32,7 @@
     <p>Soy <strong>Cristóbal Andrade</strong>, conocido como <strong>PituxxDEV</strong>. Ingeniero en Realidad Virtual y Diseño de Juegos Digitales, Especialista en desarrollo web y programación de videojuegos. Me apasiona crear proyectos interactivos, eficientes y visualmente atractivos.</p>
   </section>
 
-  <section id="web-projects">
+  <section id="web-projects" class="reveal">
     <h2>Proyectos Web</h2>
     <div class="projects">
       <div class="project-card">
@@ -47,7 +48,7 @@
 
   </section>
 
-  <section id="game-projects">
+  <section id="game-projects" class="reveal">
     <h2>Proyectos de Videojuegos</h2>
     <div class="projects">
       <div class="project-card">
@@ -61,7 +62,7 @@
     </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="reveal"> 
     <h2>Habilidades</h2>
     <ul class="skills-list">
       <li>HTML / CSS / JavaScript</li>
@@ -70,6 +71,8 @@
       <li>Diseño UI/UX</li>
     </ul>
   </section>
+
+  
 
   <section id="contact">
     <h2>Contacto</h2>
@@ -80,6 +83,8 @@
   <footer>
     <p>© <span id="year"></span> PituxxDEV. Todos los derechos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
