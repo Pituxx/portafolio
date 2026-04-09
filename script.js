@@ -260,31 +260,56 @@ function animateCounters() {
 /* ========================================
    Form Handling
 ======================================== */
-const contactForm = document.getElementById('contact-form');
+document.addEventListener('DOMContentLoaded', function() {
+  const contactForm = document.getElementById('contact-form');
 
-if (contactForm) {
-  contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+  if (contactForm) {
+    // Inicializar EmailJS
+    emailjs.init('CMorJ0aGAd6_pXp14');
 
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
 
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
-    submitBtn.disabled = true;
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
 
-    setTimeout(() => {
-      submitBtn.innerHTML = '<i class="fas fa-check"></i> Enviado!';
-      submitBtn.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
+      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+      submitBtn.disabled = true;
 
-      setTimeout(() => {
+      // Obtener valores del formulario
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subjectSelect = document.getElementById('subject');
+      const subjectText = subjectSelect.options[subjectSelect.selectedIndex].text;
+      const message = document.getElementById('message').value;
+
+      // Enviar con EmailJS
+      emailjs.send('service_agv0vmp', 'template_62c10yt', {
+        from_name: name,
+        from_email: email,
+        subject: subjectText,
+        message: message
+      })
+      .then(function() {
+        submitBtn.innerHTML = '<i class="fas fa-check"></i> Enviado!';
+        submitBtn.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
         contactForm.reset();
-        submitBtn.innerHTML = originalText;
-        submitBtn.style.background = '';
-        submitBtn.disabled = false;
-      }, 2000);
-    }, 1500);
-  });
-}
+      })
+      .catch(function(error) {
+        console.error('Error:', error);
+        submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error';
+        submitBtn.style.background = 'linear-gradient(135deg, #f44336, #e53935)';
+      })
+      .finally(function() {
+        setTimeout(function() {
+          submitBtn.innerHTML = originalText;
+          submitBtn.style.background = '';
+          submitBtn.disabled = false;
+        }, 3000);
+      });
+    });
+  }
+});
 
 /* ========================================
    Mouse Parallax Effect on Hero Cards
