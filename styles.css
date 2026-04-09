@@ -709,6 +709,174 @@ nav .nav-links {
 }
 
 /* ========================================
+   Education Section
+======================================== */
+.education-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.education-timeline {
+  position: relative;
+  padding-left: 40px;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--gradient-primary);
+  border-radius: 3px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 25px 30px;
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.timeline-item:hover {
+  transform: translateX(10px);
+  box-shadow: var(--shadow-card);
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -33px;
+  top: 30px;
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+  border: 3px solid var(--bg-dark);
+}
+
+.timeline-icon {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  border-radius: 12px;
+  font-size: 1.2rem;
+  color: var(--bg-dark);
+}
+
+.timeline-content {
+  padding-right: 60px;
+}
+
+.timeline-date {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(0, 188, 212, 0.15);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.timeline-content h3 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ========================================
+   Services Section
+======================================== */
+.services {
+  background: linear-gradient(180deg, var(--bg-dark) 0%, rgba(18, 18, 26, 0.5) 50%, var(--bg-dark) 100%);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--bg-card);
+  padding: 40px 30px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-card);
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  font-size: 2rem;
+  color: var(--bg-dark);
+}
+
+.service-card h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.service-card > p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.service-list {
+  text-align: left;
+}
+
+.service-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.service-list li:last-child {
+  border-bottom: none;
+}
+
+.service-list li i {
+  color: var(--primary);
+  font-size: 0.8rem;
+}
+
+/* ========================================
    Projects Section
 ======================================== */
 .projects {
