@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Cristóbal Andrade (PituxxDEV), Ingeniero en Realidad Virtual y Desarrollador Web Full Stack.">
+  <title>PituxxDEV | Portafolio Profesional</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Partículas de fondo -->
+  <div id="custom-particles"></div>
+
+  <!-- Indicador de progreso de scroll -->
+  <div class="scroll-progress"></div>
+
+  <!-- Botón volver arriba -->
+  <button class="back-to-top" aria-label="Volver arriba">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Menú hamburguesa para móvil -->
+  <div class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <header>
+    <div class="logo">
+      <span class="logo-icon"><i class="fas fa-code"></i></span>
+      <h1>Pituxx<span>DEV</span></h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> Sobre mí</a></li>
+        <li><a href="#education" class="nav-link"><i class="fas fa-graduation-cap"></i> Estudios</a></li>
+        <li><a href="#services" class="nav-link"><i class="fas fa-briefcase"></i> Servicios</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fas fa-folder-open"></i> Proyectos</a></li>
+        <li><a href="#skills" class="nav-link"><i class="fas fa-tools"></i> Habilidades</a></li>
+        <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contacto</a></li>
+        <li><a href="Cv.pdf" download class="cv-btn"><i class="fas fa-download"></i> CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">Bienvenido a mi portafolio</div>
+        <h1 class="hero-title">
+          <span class="greeting">Hola, soy</span>
+          <span class="name">Cristóbal Andrade</span>
+          <span class="title-wrapper">
+            <span class="title-static">Y soy </span>
+            <span class="typing-text"></span>
+            <span class="cursor">|</span>
+          </span>
+        </h1>
+        <p class="hero-description">
+          Ingeniero en Realidad Virtual y Diseño de Juegos Digitales apasionado por crear experiencias digitales interactivas, soluciones web modernas y videojuegos immersivos.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i> Ver Proyectos
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Contactar
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-card">
+          <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+          <span>Game Dev</span>
+        </div>
+        <div class="floating-card">
+          <div class="card-icon"><i class="fas fa-code"></i></div>
+          <span>Web Dev</span>
+        </div>
+        <div class="floating-card">
+          <div class="card-icon"><i class="fas fa-vr-cardboard"></i></div>
+          <span>VR/AR</span>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="section-header reveal">
+        <span class="section-tag">Conoce más</span>
+        <h2 class="section-title">Sobre <span class="highlight">mí</span></h2>
+      </div>
+      <div class="about-content">
+        <div class="about-image reveal">
+          <div class="image-wrapper">
+            <img src="images/Profile.png" alt="Profile Picture">
+            <div class="image-border"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number" data-count="3">0</span>
+              <span class="stat-label">Años de experiencia</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="15">0</span>
+              <span class="stat-label">Proyectos completados</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="10">0</span>
+              <span class="stat-label">Clientes satisfechos</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            Soy <strong>Cristóbal Andrade</strong>, conocido como <strong>PituxxDEV</strong>.
+            Soy Ingeniero en Realidad Virtual y Diseño de Juegos Digitales con pasión por
+            el desarrollo web y la programación de videojuegos.
+          </p>
+          <p>
+            Mi objetivo es crear proyectos interactivos que combinen <em>innovación</em>,
+            <em>eficiencia</em> y un <em>diseño visual atractivo</em>. Me especializo en
+            desarrollar experiencias digitales que cautivan a los usuarios.
+          </p>
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Desarrollo Web Full Stack</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Diseño de Videojuegos</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Experiencias VR/AR</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>UI/UX Design</span>
+            </div>
+          </div>
+          <a href="Cv.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Descargar CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="education section">
+      <div class="section-header reveal">
+        <span class="section-tag">Mi formación</span>
+        <h2 class="section-title">Estudios & <span class="highlight">Certificaciones</span></h2>
+      </div>
+      <div class="education-content">
+        <div class="education-timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2019 - 2024</span>
+              <h3>Ingeniería en Realidad Virtual y Diseño de Juegos Digitales</h3>
+              <p>Formación integral en desarrollo de videojuegos,realidad virtual, diseño 3D y programación de experiencias interactivas.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022</span>
+              <h3>Certificación Unity Game Developer</h3>
+              <p>Desarrollo de juegos con Unity Engine y C#, implementación de mecánicas de juego y optimización.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2021</span>
+              <h3>Certificación Diseño UI/UX</h3>
+              <p>Diseño de interfaces de usuario, experiencia de usuario, prototipado y pruebas de usabilidad.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2023</span>
+              <h3>Desarrollo Web Full Stack</h3>
+              <p>Creación de aplicaciones web modernas con HTML, CSS, JavaScript y frameworks front-end.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services section">
+      <div class="section-header reveal">
+        <span class="section-tag">Lo que ofrezco</span>
+        <h2 class="section-title">Mis <span class="highlight">Servicios</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Desarrollo Web</h3>
+          <p>Creación de sitios web modernos, responsivos y optimizados. Landing pages, páginas corporativas y aplicaciones web interactivas con las últimas tecnologías.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Sitios Web Responsive</li>
+            <li><i class="fas fa-check"></i> Landing Pages</li>
+            <li><i class="fas fa-check"></i> Aplicaciones Web</li>
+            <li><i class="fas fa-check"></i> SEO y Optimización</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <h3>Desarrollo de Videojuegos</h3>
+          <p>Diseño y desarrollo de videojuegos usando Unity y Godot. Desde juegos 2D hasta experiencias 3D y de realidad virtual.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Juegos 2D y 3D</li>
+            <li><i class="fas fa-check"></i> Experiencias VR</li>
+            <li><i class="fas fa-check"></i> Game Design</li>
+            <li><i class="fas fa-check"></i> Assets y Arte 2D</li>
+          </ul>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Diseño UI</h3>
+          <p>Diseño de interfaces de usuario atractivas y funcionales. Prototipos, wireframes, diseño visual y seguimiento de tendencias.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Wireframes y Prototipos</li>
+            <li><i class="fas fa-check"></i> Diseño Visual</li>
+            <li><i class="fas fa-check"></i> Design System</li>
+            <li><i class="fas fa-check"></i> UI Animations</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <div class="section-header reveal">
+        <span class="section-tag">Mi trabajo</span>
+        <h2 class="section-title">Proyectos <span class="highlight">Destacados</span></h2>
+      </div>
+
+      <div class="projects-tabs reveal">
+        <button class="tab-btn active" data-tab="all">Todos</button>
+        <button class="tab-btn" data-tab="web">Web</button>
+        <button class="tab-btn" data-tab="games">Videojuegos</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Proyecto Web 1 -->
+        <div class="project-card reveal" data-category="web">
+          <div class="project-image">
+            <img src="images/160x160.png" alt="Landing Claro Chile">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="http://690278ae3be1eb62b7d3f083--stately-tanuki-4cc543.netlify.app/" target="_blank" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Web</span>
+            <h3>Landing page - Claro Chile</h3>
+            <p>Landing page informativa para distribuidor oficial de Claro Chile. Diseño responsive y moderno.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto Web 2 -->
+        <div class="project-card reveal" data-category="web">
+          <div class="project-image">
+            <img src="images/DonlucasGratis.png" alt="Landing Casinos Online">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Web</span>
+            <h3>Landing Casino Online</h3>
+            <p>Landing de promoción para casinos en línea con diseño atractivo y optimizado para conversión.</p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Animaciones</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto Juego 1 -->
+        <div class="project-card reveal" data-category="games">
+          <div class="project-image">
+            <img src="images/TEAYUDO.png" alt="TEAYUDO">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-gamepad"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Videojuego</span>
+            <h3>TEAYUDO</h3>
+            <p>Videojuego educativo diseñado para ayudar a personas mientras se divierten jugando.</p>
+            <div class="project-tags">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Game Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyecto Juego 2 -->
+        <div class="project-card reveal" data-category="games">
+          <div class="project-image">
+            <img src="images/LogoDigi.png" alt="Plataformas 2D">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-gamepad"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-category">Videojuego</span>
+            <h3>Plataformas 2D</h3>
+            <p>Juego de plataformas 2D con mecánicas de exploración y retos de habilidad.</p>
+            <div class="project-tags">
+              <span>Unity</span>
+              <span>C#</span>
+              <span>Pixel Art</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills section">
+      <div class="section-header reveal">
+        <span class="section-tag">Lo que domino</span>
+        <h2 class="section-title">Habilidades & <span class="highlight">Tecnologías</span></h2>
+      </div>
+
+      <div class="skills-container">
+        <div class="skills-category reveal">
+          <h3><i class="fas fa-code"></i> Desarrollo Web</h3>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>HTML5</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>CSS3 / SASS</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>JavaScript</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>React / Vue</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3><i class="fas fa-gamepad"></i> Game Development</h3>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>Unity Engine</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>C#</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>Blender</span>
+                <span class="skill-percent">70%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>Godot</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-category reveal">
+          <h3><i class="fas fa-vr-cardboard"></i> VR / Diseño</h3>
+          <div class="skill-bars">
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>Realidad Virtual</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>UI/UX Design</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>Adobe Suite</span>
+                <span class="skill-percent">75%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-info">
+                <span>Visual Studio Code</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-progress">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tools-grid reveal">
+        <div class="tool-item">
+          <i class="fab fa-unity"></i>
+          <span>Unity</span>
+        </div>
+        <div class="tool-item">
+          <i class="fab fa-react"></i>
+          <span>React</span>
+        </div>
+        <div class="tool-item">
+          <i class="fab fa-node-js"></i>
+          <span>Node.js</span>
+        </div>
+        <div class="tool-item">
+          <i class="fab fa-git-alt"></i>
+          <span>Git</span>
+        </div>
+        <div class="tool-item">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="tool-item">
+          <i class="fab fa-js-square"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="tool-item">
+          <i class="fas fa-cube"></i>
+          <span>Blender</span>
+        </div>
+        <div class="tool-item">
+          <i class="fab fa-adobe"></i>
+          <span>Adobe</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="section-header reveal">
+        <span class="section-tag">Hablemos</span>
+        <h2 class="section-title">Contacto <span class="highlight">Directo</span></h2>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>cristobal.andradeq5@gmail.com</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Ubicación</h3>
+            <p>Santiago, Chile</p>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Disponibilidad</h3>
+            <p>Abierto a proyectos</p>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required>
+            <label for="name"><i class="fas fa-user"></i> Nombre</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required>
+            <label for="email"><i class="fas fa-at"></i> Email</label>
+          </div>
+          <div class="form-group">
+            <select id="subject" name="subject" required>
+              <option value="">Selecciona una opción</option>
+              <option value="proyecto">Nuevo Proyecto</option>
+              <option value="trabajo">Oferta de Trabajo</option>
+              <option value="consulta">Consulta</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <label for="message"><i class="fas fa-comment"></i> Mensaje</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>Pituxx<span>DEV</span></h2>
+        <p>Creando experiencias digitales extraordinarias</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#education">Estudios</a>
+        <a href="#services">Servicios</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contacto</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Itch.io"><i class="fab fa-itch-io"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> PituxxDEV. Todos los derechos reservados.</p>
+      <p>Hecho con <i class="fas fa-heart"></i> y mucho café</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
